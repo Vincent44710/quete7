@@ -1,0 +1,7 @@
+<p>Mon nom :{{ model.firstname }}</p>
+<p>Mon prénom: {{ model.lastname }}</p>
+<p>Mon age: {{ model.age }} ans</p>
+<p>Mon age: {{ model.gender }}</p>
+<p>Ma bio: {{ model.bio }}</p>
+
+<app-skill *ngFor="let skill of model.skills" [skills]="skill"> </app-skill>
